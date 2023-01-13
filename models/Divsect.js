@@ -11,12 +11,12 @@ const DivsectSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    district: {
-        type: [String],
-        required: true,
-    },
+    district: [{
+        type: String,
+        default: "",
+    }],
     province: {
-        type: [String],
+        type: String,
         required: true,
     },
     phone: {

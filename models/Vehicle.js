@@ -16,18 +16,17 @@ const VehicleSchema = new mongoose.Schema({
         type: [String],
         required: true
     },
-    // country: {
-    //     type: String,
-    //     required: true,
-    // },
+    country: {
+        type: String,
+        required: true,
+    },
     img: {
         type: String,
     },
-    // city: {
-    //     type: String,
-    //     required: true,
-    // },
-}, { timestamps: true }
-)
+    city: {
+        type: String,
+        required: true,
+    },
+}, { timestamps: true })
 
 export default mongoose.model("Vehicle", VehicleSchema)
